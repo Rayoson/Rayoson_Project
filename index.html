@@ -5,19 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="image/Logo.png" type="image/x-icon">
     <title>Rayoson_project</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/boxicons.min.css">
+    <link rel="stylesheet" href="css/myhome.css">
 </head>
 <body>
+  <div class="navtop">
     <div class="container1">
-    <head class="h-300">            
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="row">
+        <div class="col-auto">
+          <p>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAZxJREFUSEu91b9LlXEUx/GXQ1rSDwibBKO2jAZr6V8QglYFCSlBKv8Aw4aGnKKGloaoMWgoEAlam7MpyIJc1MmG6Iel4eD3wPcLT09XuPp0/cLl3ufhnPf5nM9znnO7dPB0dZBtX+GnMdCgm1V8LvlV5Y8x0QBcUp/iWlwUeA9+58/bBgUu4DCO4keB9+ELfuIS3uyhwEW8xrFs7UqBn8BaBm5hGvd3UWAqqX2AAznnJJbryjcQFsX9FxjP3exUpxdPMJIDwtpDdeXFlkVcx0scxydczt/1AqfwCmfwLcWM4i7Oo6XygA+iH/MYwjqu5IKlwHCCPk/WHcH7/JyW8a4VvHj+MSsJSHdS/xCTmXgPM+n3HdzK1j1L3l5N15s5piW82PIBZ2v9j2Vfo1hMVAj5kwbgRr5fDV9IHcc4xov4z7RUlVeTziWL5hA+R/sxrmFH/exaeQHE/N7EI3zdYXz2pLzdkW/7gbYLrMa1hB/Me+UX/sduCQu/V7dijFm8BE3P7bQGZqtbsQCb7vMVLBXYvv4TNbXkr/yOKt8G7w5aGDDl7kwAAAAASUVORK5CYII="/>
+            <span>Obonghaprince@gmail.com</span>
+          </p>
+          <p>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAXRJREFUSEu91DtIHVEUheFPRRCj+AAlCEpKiQjGRhvRmEKwM0QICGmFQCCNloJ1UoUUtpZqYSnY2IqNpBKNhdpYKAmIWlhI5sBcGCdzH3P1ussza/615+zZq04Nq66GbM8OH8QGjvEed9V+XbrzaayhJQZu4gPuqzFIwjtwifoU6Ce+PBbei7MikEV8y2uQ7PwFrksARrCXxyB95+d4mQH4i2GcPAa+jtkU4AZj2M8DDtp05/NR5ysJyC3eYTcvOAvehXA1DTHsFK+qAWfBw9kqPiWAU9jOMOhDT6mvylr/8EseoSkGXmAcBwmD19HZDjoxhzCr/6pYtoSl+ZFQX+EjtjAUg9sTz4M+LNuDKhVcS9HAl1P6X/EM2jIa/Y6F5Hm5VPwcd1ROV2A+iIpKXpqIhxwGWK4O0V8QVQIP2pCSIV++orWIwx+MRgP+nRde0If8mcFbvEFjlP0DkXFYtsl09lTaeanr6EZzVu48BbyocU3h/wCLAjIY58J3BQAAAABJRU5ErkJggg=="/>
+            <span>+90-5338315831</span>
+          </p>
+        </div>
+        <div class="col-auto">
+          <div class="social_nav ">
+            <p>
+              <img class="social" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAiNJREFUSEu11UnIzlEUx/HPSxkiCyFTCgtDYSEUyYaUJNlYYKGUDAtlzMaGxE6hTMXCsFCSJClJCRmizJGQMQmJMt9T91+3v/d538fiPfUs/vf5ne8959xzz23RgdbSgWztwQdhPqZjJOL7DR7gfFo7hmeNAmwE74w12ITubWT3HZuxFT/rutbgg3Eck/6jZDcwD89Lnzo8oryO0XiRo+7Txiaf8R7DcA8T8LXS1+G7sDz/uRhHsShH9Qpv0TfX/gwOYAZOZp/dWNEafCxuF1FOw8UmSlP3G4M74VdGvh1rC9jslObpJuCTU/SXCl0c7sY6/BbGZdFdRAR/moCHJOCxSdg1TKzDv6BHFmzDhibBIYuMI/Owb5nzpypLJ/wqYOsLcTN7LEmHvK8QxqG/L2v+Cb2yYC+WNkMtMl1X6LvgRwm/WtUqteM7DC17to2NuuIx4vKFPUotPKJe8y3VKWfRodTXy3ING7G7IXo77kRlcVdW1uExmO7jJs5iVfp9TBHtx4U8qCrAVOzAAPSv7Tw+M/6ZijHlYgpGtzzMNzBKtwBHCsjc1LYnWknnVALPqdbr1z9O+UqOaDh6prT74TJ+F7CIOMZBaU8xJTXC60bwWB+SROcQ7Xk4C3fmAVX5xYYxZyqLLGfWZ3ujed4713Rh9h6VH4gKNhAv88dBrMaHepnae4miNLNSmfakToqHocw4pl9MxieNWqk9eCO/ptY7FP4X6hphGJapBLwAAAAASUVORK5CYII="/>
+            </p>
+            <p>
+              <img class="social" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAATZJREFUSEvt1b8rh1EUx/EXGZjYTMqPUgY2IaUYLEZ/g5JBMkjCQslkVv4Cs9FgUCQlZZCfSSlG5UdZuHq+dcLw5Pl+y+Bs5zz3vs9zP+ece6tU0KoqyPYTfBj3OC6a+Ct8F/0ZdBprRRJE+Ai2Auwc7eWC92A/wHYwWC544sxhHDeYxFE54UVY3/ZGzWswH1YcZjVowFSIb+INo+j7KHo99rCCx5ghwmvxEj6uZxI14zrEE2Qig0bWLYZwUQrmgbfgKqdeGxgrCj/BNrqyvy3xHtBYBJ4k6sRTBjlAdzhZHV6T/xtZ0tSm6S1ZqsFs8FONUivngrfiMmxexFLwEzglKFkHTn8LX8BygM1g9R/+92SpxkAozB3OkK6F3hBPff7Zapk1oS34qe+fv3ZLzgnPv6yiD/Q7ihVZGMWLhcoAAAAASUVORK5CYII="/>
+            </p>
+            <p>
+              <img class="social" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAahJREFUSEvd1c+Lj1EUx/HXhORnYeHHbDTKgoVfNRsLilIWmimLsVDKn6BYCTvsrCmlGCuSpSxYSJFfGYwmyQKRUEiR3FP31u32NItv893MXT2nc877nuecz3meAX08A31km33wxRjDXgxjE75ULVyGZ3iIa7iMf22Lu9qyJ8GuY0EV/BJLsBKf8B0bKv8LjOJ1fUELn5cqfoWhHgZ9Bzungx9NFZ/pAVxS9uFmMerK5+Azop+9nnvY3gXfnRy3eqVWeevwJuy68gs43MCf4j72Y0Xl+4arWUlbm5yTiXuqhU9ifaOAjdkOKT6pfCHPB9l+jM2V7y52tPDfmF8F3UjAkWyHLH81Oo/q41zBgcr3AWtqeJscvp9ZWrEoB5M8L1WA0ziOpZjAqqY1i6KY0vMueImP4XTp/l2ucG6HCAbxvsDjph8zoJSCWI6vBR63x8DKACPoNqZySxZ2XBwzim/KWuyq/M+xBX9rKcbqH8MJlFc9jyNp67Z1wB+lhTuHQ9n3J0vwLOK583u+Ous9kmKx3k7TrpDkOC4i9uRjHTv7fhYzIpy+tuU/voNGGIMAuHQAAAAASUVORK5CYII="/>
+            </p>
+            <p>
+              <img class="social" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAVNJREFUSEvd1U8rbWEUx/HPSf5cIrm6xUAZMmHA7OZt3LpjIzI0okxkIFIKmSjxXpSJrgHlBTA46RBKIvZTZ9e2nX3O4+ZMrOFea32fZ/3WWs8uaaKVmsj2veChmleM4leEbJe4qBWXleVHAl3CNH5GQPMh1zjAIh6CMwufx+p/QPMpC1jJw48x+QXwfxjPw2/RUwC/QW/kwffozsLb8VgneReH2MBExCGtifbPqeb9KNdJ2sFMtUd/qpoO14nvQyWFDyCMVJFtJ4fPZpwdOEq1rZE0iKvP3jxwphAqCXtQZGE/yim8M53NgugtLCeNWk8W5m+E5qGHT9k5Dw0NH2vZOYbQFQG+S6cuCz/DSERyo5BTjOXnfBNzjTIj/GuJxGHb361/GPx9hDHK2m+0REAriXR71ffpw9tSlB90DmW2VQNecIKwiXXte/0sGlUb7W+qLG/lvDAYZumv3AAAAABJRU5ErkJggg=="/>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container1" >            
+                <nav class="navbar navbar-expand-lg " style="background-color: rgb(197, 224, 224);">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="#"><img src="image/Logo.png" height="100" width="100" alt=""></a>
+                      <a class="navbar-brand" href="index.html"><img  src="image/Logo.png" height="50" width="50" alt=""></a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
                       <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav " >
+                        <ul class="navbar-nav  ms-auto " >
                           <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                           </li>
@@ -33,9 +66,29 @@
                         </ul>
                       </div>
                     </div>
-                </nav>         
-    </head>
+              </nav>
+        <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/carouseal.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="image/laptopcode.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="image/man.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
     </div>
-    <script src="bootstrap.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
